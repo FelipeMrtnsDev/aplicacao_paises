@@ -1,5 +1,5 @@
 import React from 'react';
-import CountryInfo from '../components/CountryInfo';
+import CountryInfo from '../../components/CountryInfo';
 
 const CountryInfoPage = () => {
     return (
