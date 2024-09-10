@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CountryListPage from './pages/CountryListPage';
 import CountryInfoPage from './pages/CountryInfoPage';
 import { useState } from 'react';
-import CountryInfos from './pages/CountryInfoPagePlace';
+import CountryInfos from './pages/CountryInfos';
 
 const App = () => {
     const [data, setData] = useState({})

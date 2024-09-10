@@ -1,5 +1,5 @@
 import React from 'react';
-import CountryList from '../components/CountryList';
+import CountryList from '../../components/CountryList';
 
 const CountryListPage = ({setData}) => {
     return (
