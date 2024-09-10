@@ -1,10 +1,10 @@
 import React from 'react';
 import CountryList from '../components/CountryList';
 
-const CountryListPage = () => {
+const CountryListPage = ({setData}) => {
     return (
         <div>
-            <CountryList />
+            <CountryList setData={setData} />
         </div>
     );
 };

@@ -36,7 +36,8 @@
     ]
   },
   "devDependencies": {
-    "react-router-dom": "^6.26.2"
+    "react-router-dom": "^6.26.2",
+    "styled-components": "^6.1.13"
   },
   "proxy": "http://localhost:8082"
 }
