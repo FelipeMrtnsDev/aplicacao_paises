@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Card, Container, LinkCountry, UlContainer } from './styles';
 
 const CountryList = ({setData}) => {
     const [countries, setCountries] = useState([]);
@@ -26,20 +26,20 @@ const CountryList = ({setData}) => {
     }
 
     return (
-        <div>
+        <Container>
             <h1>Countries List</h1>
-            <ul>
+            <UlContainer>
                 {countries.map((country) => {
                     return(
-                        <li onClick={() => getCountryData(country.countryCode)} key={country.countryCode}>
-                            <Link to={`/countryinfo/${country.name}`}>
+                        <Card onClick={() => getCountryData(country.countryCode)} key={country.countryCode}>
+                            <LinkCountry to={`/countryinfo/${country.name}`}>
                                 {country.name}
-                            </Link>
-                        </li>
+                            </LinkCountry>
+                        </Card>
                     )
                 })}
-            </ul>
-        </div>
+            </UlContainer>
+        </Container>
     );
 };
 

@@ -3,7 +3,7 @@ import { Container, Datas } from './styles'
 
 function CountryInfos({data}) {
     const { id } = useParams()
-    console.log("mues dados", data)
+    console.log("meus dados", data)
     return(
         <Container>
                 <h1>{id}</h1>

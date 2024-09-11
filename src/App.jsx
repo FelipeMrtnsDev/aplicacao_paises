@@ -4,11 +4,13 @@ import CountryListPage from './pages/CountryListPage';
 import CountryInfoPage from './pages/CountryInfoPage';
 import { useState } from 'react';
 import CountryInfos from './pages/CountryInfos';
+import { GlobalStyle } from './styles/GlobalStyles';
 
 const App = () => {
     const [data, setData] = useState({})
     return (
         <Router>
+            <GlobalStyle />
             <Routes>
                 <Route path="/" element={<CountryListPage setData={setData} />} />
                 <Route path="v1/api/country/:countryCode" element={<CountryInfoPage />} />

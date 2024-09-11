@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
-import PopulationChart from './PopulationChart';
+import PopulationChart from '../PopulationChart';
 
 const CountryInfo = () => {
     const { countryCode } = useParams();
@@ -9,7 +9,7 @@ const CountryInfo = () => {
 
     useEffect(() => {
         const fetchCountryData = async () => {
-            console.log('CountryCode:', countryCode); // Log para depuração
+            console.log('CountryCode:', countryCode);
             try {
                 const response = await axios.get(`/v1/api/country/${countryCode}`);
                 setCountryData(response.data);
